@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nandhu S - MCA Candidate, AI & Machine Learning Developer, Software Developer. Explore my portfolio of AI-powered applications and data analytics projects.">
+  <meta name="keywords" content="Nandhu S, AI Developer, Machine Learning, Portfolio, MCA, Software Developer">
+  <meta name="author" content="Nandhu S">
+  <meta property="og:title" content="Nandhu S | AI & ML Developer Portfolio">
+  <meta property="og:description" content="Passionate MCA student with expertise in AI, ML, Data Analytics, and Full Stack Development.">
+  <meta property="og:type" content="website">
+  <title>Nandhu S | AI & ML Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== CUSTOM CURSOR ==================== -->
+  <div class="custom-cursor-dot" id="custom-cursor-dot"></div>
+  <div class="custom-cursor-outline" id="custom-cursor-outline"></div>
+
+  <!-- ==================== LOADING SCREEN ==================== -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <div class="loader-text">NANDHU S</div>
+      <div class="loader-bar"><div class="loader-progress" id="loader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo"><span>N</span>ANDHU <span>S</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#achievements" class="nav-link">Achievements</a></li>
+      <li><a href="#resume" class="nav-link">Resume</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section id="hero" class="blueprint-grid">
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="scanner-line"></div>
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-text">
+        <span class="hero-greeting reveal">Hello, I'm</span>
+        <h1 class="hero-name reveal">NANDHU S</h1>
+        <p class="hero-title-line reveal">MCA Candidate</p>
+        <div class="typing-wrapper reveal">
+          <span class="typing-text"></span><span class="typing-cursor">|</span>
+        </div>
+        <div class="hero-buttons reveal">
+          <a href="#projects" class="btn-primary">View Projects</a>
+          <a href="#resume" class="btn-secondary">Resume</a>
+          <a href="#contact" class="btn-secondary">Contact</a>
+        </div>
+      </div>
+      <div class="hero-portrait-container reveal">
+        <div class="hero-portrait-frame">
+          <img src="assets/images/portrait.jpg" alt="Nandhu S - AI & ML Developer architectural blueprint portrait" loading="eager">
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT / EDUCATION SECTION ==================== -->
+  <section id="about" class="blueprint-grid">
+    <div class="section-header">
+      <h2 class="section-title reveal">Education</h2>
+      <p class="section-subtitle reveal">My Academic Journey</p>
+    </div>
+    <div class="about-container">
+      <div class="bg-orb orb-3" style="top: 20%; left: 10%; width: 250px; height: 250px;"></div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="education-card">
+            <span class="edu-period">2024 – 2026</span>
+            <h3 class="edu-degree">Master of Computer Applications</h3>
+            <p class="edu-institution">Alliance University, Bangalore</p>
+            <span class="edu-cgpa">CGPA: 9.2</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot" style="background: var(--accent-blue); box-shadow: 0 0 15px var(--accent-blue-glow);"></div>
+          <div class="education-card">
+            <span class="edu-period">2021 – 2024</span>
+            <h3 class="edu-degree">Bachelor of Science in Mathematics</h3>
+            <p class="edu-institution">Amrita Vishwa Vidyapeetham</p>
+            <span class="edu-cgpa">CGPA: 6.35</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS SECTION ==================== -->
+  <section id="skills" class="blueprint-grid">
+    <div class="section-header">
+      <h2 class="section-title reveal">Technical Skills</h2>
+      <p class="section-subtitle reveal">Technologies & Expertise</p>
+    </div>
+    <div class="skills-container">
+      <div class="bg-orb orb-1" style="bottom: 10%; right: 5%; width: 280px; height: 280px; opacity: 0.1;"></div>
+      <canvas id="skills-canvas"></canvas>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">Programming Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">COBOL</span>
+            <span class="skill-tag">C</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">AI & Machine Learning</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">Deep Learning</span>
+            <span class="skill-tag">NLP</span>
+            <span class="skill-tag">Feature Engineering</span>
+            <span class="skill-tag">Data Preprocessing</span>
+            <span class="skill-tag">Predictive Analytics</span>
+            <span class="skill-tag">Prompt Engineering</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">Frameworks & Libraries</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Scikit-learn</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">PyTorch</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">Databases</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MSSQL</span>
+            <span class="skill-tag">DB2</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">Web Technologies</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Next.js</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-category-title">Tools & Platforms</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Prisma ORM</span>
+            <span class="skill-tag">Jupyter Notebook</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS SECTION ==================== -->
+  <section id="projects" class="blueprint-grid">
+    <div class="section-header">
+      <h2 class="section-title reveal">Projects</h2>
+      <p class="section-subtitle reveal">Featured Work & Innovations</p>
+    </div>
+    <div class="projects-container">
+      <div class="bg-orb orb-2" style="top: 30%; left: 30%; width: 320px; height: 320px; opacity: 0.08;"></div>
+      <div class="scanner-line" style="animation-duration: 12s;"></div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal">
+          <span class="project-number">01</span>
+          <h3 class="project-title">LifeRush Blood Donation Platform</h3>
+          <p class="project-description">An AI-powered blood donation platform that uses machine learning for intelligent donor matching, JWT-based authentication, and a sophisticated donor ranking algorithm for emergency situations.</p>
+          <div class="project-tech-stack">
+            <span class="tech-badge">FastAPI</span>
+            <span class="tech-badge">PostgreSQL</span>
+            <span class="tech-badge">Machine Learning</span>
+            <span class="tech-badge">JWT</span>
+          </div>
+          <ul class="project-features">
+            <li>AI-powered donor matching system</li>
+            <li>JWT authentication & authorization</li>
+            <li>Intelligent donor ranking algorithm</li>
+            <li>Emergency donor discovery</li>
+            <li>RESTful API architecture</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Ccodgodd/LifeRush.git" target="_blank" class="project-link" aria-label="View LifeRush source code on GitHub">GitHub</a>
+            <a href="#" class="project-link" aria-label="View LifeRush live demo">Live Demo</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal">
+          <span class="project-number">02</span>
+          <h3 class="project-title">Twitter Sentiment Analysis System</h3>
+          <p class="project-description">A comprehensive sentiment analysis platform that classifies Twitter data using NLP techniques, featuring data preprocessing pipelines, feature engineering, and interactive analytical dashboards.</p>
+          <div class="project-tech-stack">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">Flask</span>
+            <span class="tech-badge">Pandas</span>
+            <span class="tech-badge">NumPy</span>
+            <span class="tech-badge">NLP</span>
+          </div>
+          <ul class="project-features">
+            <li>Sentiment classification engine</li>
+            <li>Advanced data preprocessing</li>
+            <li>Feature engineering pipeline</li>
+            <li>Analytical dashboard</li>
+            <li>Trend visualization</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Ccodgodd/AI_PROJECT-SENTI-.git" target="_blank" class="project-link" aria-label="View Sentiment Analysis source code on GitHub">GitHub</a>
+            <a href="#" class="project-link" aria-label="View Sentiment Analysis live demo">Live Demo</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal">
+          <span class="project-number">03</span>
+          <h3 class="project-title">Student Allotment Webapp</h3>
+          <p class="project-description">An intelligent college seat allotment and allocation system that processes merit rankings and student preference logs to automate allocations based on reservation categories and cutoff guidelines.</p>
+          <div class="project-tech-stack">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">Web Framework</span>
+            <span class="tech-badge">SQL</span>
+            <span class="tech-badge">Algorithms</span>
+          </div>
+          <ul class="project-features">
+            <li>Merit-based selection algorithms</li>
+            <li>Multi-category reservation mapping</li>
+            <li>Student preference sorting</li>
+            <li>Dynamic seat vacancy tracker</li>
+            <li>Allocation slip generator tool</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Ccodgodd/NandhuS-StudentAllotment.git" target="_blank" class="project-link" aria-label="View Student Allotment source code on GitHub">GitHub</a>
+            <a href="#" class="project-link" aria-label="View Student Allotment live demo">Live Demo</a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal">
+          <span class="project-number">04</span>
+          <h3 class="project-title">PDF2Audio Converter</h3>
+          <p class="project-description">A helpful accessibility utility that parses layout text from standard PDF documents and compiles clean, high-quality audio files using Text-to-Speech engines, supporting offline playbacks.</p>
+          <div class="project-tech-stack">
+            <span class="tech-badge">Python</span>
+            <span class="tech-badge">PyPDF2</span>
+            <span class="tech-badge">pyttsx3 / gTTS</span>
+            <span class="tech-badge">Audio Processing</span>
+          </div>
+          <ul class="project-features">
+            <li>Multi-page text extraction layers</li>
+            <li>Configurable voice and speed knobs</li>
+            <li>Asynchronous audio rendering</li>
+            <li>Offline MP3/WAV exports</li>
+            <li>Responsive web visualizer panel</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Ccodgodd/PDF2AUDIO.git" target="_blank" class="project-link" aria-label="View PDF2Audio source code on GitHub">GitHub</a>
+            <a href="#" class="project-link" aria-label="View PDF2Audio live demo">Live Demo</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE SECTION ==================== -->
+  <section id="experience" class="blueprint-grid">
+    <div class="section-header">
+      <h2 class="section-title reveal">Experience</h2>
+      <p class="section-subtitle reveal">Professional Journey</p>
+    </div>
+    <div class="experience-container">
+      <div class="exp-card reveal">
+        <span class="exp-company">Teamware Solutions</span>
+        <h3 class="exp-role">Mainframe Developer Intern</h3>
+        <p class="exp-duration">Dec 2025 – Present</p>
+        <p class="exp-project-name">COBOL-Based Integrated Paddy Farm Payroll & Profit Optimization System</p>
+        <ul class="exp-features">
+          <li>Payroll automation system</li>
+          <li>Production cost analysis</li>
+          <li>Revenue tracking module</li>
+          <li>Profit optimization engine</li>
+          <li>Financial reporting dashboard</li>
+          <li>COBOL mainframe development</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ACHIEVEMENTS SECTION ==================== -->
+  <section id="achievements" class="blueprint-grid">
+    <div class="section-header">
+      <h2 class="section-title reveal">Achievements</h2>
+      <p class="section-subtitle reveal">Milestones & Recognition</p>
+    </div>
+    <div class="achievements-container">
+      <div class="achievements-grid">
+        <div class="achievement-card reveal">
+          <span class="achievement-icon">💻</span>
+          <span class="achievement-value" data-count="150">0</span>
+          <p class="achievement-label">LeetCode Problems Solved</p>
+        </div>
+        <div class="achievement-card reveal">
+          <span class="achievement-icon">🏆</span>
+          <span class="achievement-value">Finalist</span>
+          <p class="achievement-label">HackCulture Hackathon</p>
+        </div>
+        <div class="achievement-card reveal">
+          <span class="achievement-icon">🏸</span>
+          <span class="achievement-value">Representative</span>
+          <p class="achievement-label">University Badminton Team</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== RESUME SECTION ==================== -->
+  <section id="resume" class="blueprint-grid">
+    <div class="section-header">
+      <h2 class="section-title reveal">Resume</h2>
+      <p class="section-subtitle reveal">Download & Preview</p>
+    </div>
+    <div class="resume-container reveal">
+      <div class="resume-preview">
+        <div class="resume-icon" style="font-size: 4rem; margin-bottom: 20px;">📄</div>
+        <h3 style="font-size: 1.3rem; margin-bottom: 10px;">Nandhu S - Resume</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 10px; font-size: 0.9rem;">MCA Candidate | AI & ML Developer | Software Developer</p>
+        <p style="color: var(--text-tertiary); font-size: 0.8rem; max-width: 500px;">Passionate MCA student with expertise in Python, Java, SQL, Machine Learning, Deep Learning, NLP, FastAPI, Data Analytics, and Full Stack Development.</p>
+      </div>
+      <div class="resume-actions">
+        <a href="assets/resume.pdf" download class="btn-primary" aria-label="Download Resume PDF">Download Resume</a>
+        <a href="assets/resume.pdf" target="_blank" class="btn-secondary" aria-label="View Resume in new tab">View Full Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT SECTION ==================== -->
+  <section id="contact" class="blueprint-grid">
+    <div class="section-header">
+      <h2 class="section-title reveal">Get In Touch</h2>
+      <p class="section-subtitle reveal">Let's Connect & Collaborate</p>
+    </div>
+    <div class="contact-container">
+      <div class="contact-info">
+        <a href="mailto:nandhus5270kvk@gmail.com" class="contact-item reveal">
+          <div class="contact-icon">✉</div>
+          <div>
+            <h4 style="font-size: 0.9rem; margin-bottom: 4px;">Email</h4>
+            <p style="font-size: 0.8rem;">nandhus5270kvk@gmail.com</p>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/nandhu-s-273029246" target="_blank" class="contact-item reveal">
+          <div class="contact-icon">in</div>
+          <div>
+            <h4 style="font-size: 0.9rem; margin-bottom: 4px;">LinkedIn</h4>
+            <p style="font-size: 0.8rem;">linkedin.com/in/nandhu-s-273029246</p>
+          </div>
+        </a>
+        <a href="https://github.com/Ccodgodd/" target="_blank" class="contact-item reveal">
+          <div class="contact-icon">⌨</div>
+          <div>
+            <h4 style="font-size: 0.9rem; margin-bottom: 4px;">GitHub</h4>
+            <p style="font-size: 0.8rem;">github.com/Ccodgodd</p>
+          </div>
+        </a>
+        <a href="tel:+91XXXXXXXXXX" class="contact-item reveal">
+          <div class="contact-icon">☎</div>
+          <div>
+            <h4 style="font-size: 0.9rem; margin-bottom: 4px;">Phone</h4>
+            <p style="font-size: 0.8rem;">+91 XXXXX XXXXX</p>
+          </div>
+        </a>
+      </div>
+      <form class="contact-form reveal" id="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ==================== CHATBOT WIDGET ==================== -->
+  <div id="chatbot-widget">
+    <button class="chatbot-toggle" id="chatbot-toggle" aria-label="Open AI Chat Assistant">
+      💬
+    </button>
+    <div class="chatbot-window" id="chatbot-window">
+      <div class="chatbot-header">
+        <div class="chatbot-title">
+          <span class="chatbot-status"></span>
+          Nandhu AI
+        </div>
+        <button class="chatbot-close" id="chatbot-close" aria-label="Close chat">✕</button>
+      </div>
+      <div class="chatbot-messages" id="chatbot-messages"></div>
+      <div class="chatbot-input-area">
+        <input type="text" class="chatbot-input" id="chatbot-input" placeholder="Ask about Nandhu's work..." aria-label="Chat input">
+        <button class="chatbot-send" id="chatbot-send" aria-label="Send message">➤</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#hero" class="nav-link">Home</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+    <p>© 2025 Nandhu S. Designed & Built with passion.</p>
+    <p style="margin-top: 5px; font-size: 0.7rem; color: var(--text-tertiary);">Intelligence is Designing Possibilities.</p>
+  </footer>
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
